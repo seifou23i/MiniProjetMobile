@@ -7,15 +7,15 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.ubuntu.miniprojetmobile.entity.Restaurant
+import com.example.ubuntu.miniprojetmobile.entity.CartItem
 
 
 /**
  * Created by ubuntu on 4/16/18.
  */
-class RestaurantAdapter(_ctx: Context, _listRestaurants:List<Restaurant>): BaseAdapter() {
+class CartItemAdapter(_ctx: Context, _listCartItems:List<CartItem>): BaseAdapter() {
     var ctx = _ctx
-    val listRestaurant = _listRestaurants
+    val listRestaurant = _listCartItems
 
 
     override fun getItem(p0: Int) = listRestaurant.get(p0)
